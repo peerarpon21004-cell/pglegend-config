@@ -1,6 +1,6 @@
 {
   "maintenance": {
-    "active": false,
+    "active": true,
     "url": "https://peerarpon21004-cell.github.io/pglegend-config/maintenance.html",
     "title_th": "ปิดปรับปรุงระบบ",
     "title_en": "Under Maintenance"

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PGLEGEND — Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, "SF Pro Text", "Helvetica Neue", "Sukhumvit Set", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0d0d24 0%, #1a0a3a 100%);
+      color: #e5e5ef;
+      padding: 32px 20px 64px 20px;
+      line-height: 1.65;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      background: linear-gradient(180deg, #ffd54f, #ff9800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 0 4px 0;
+    }
+    h2 {
+      font-size: 20px;
+      color: #ffd54f;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 16px;
+      color: rgba(255,255,255,.7);
+      margin-top: 16px;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    p, li { color: rgba(255,255,255,.85); }
+    a { color: #ffd54f; }
+    .updated {
+      color: rgba(255,255,255,.5);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .section {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0;
+    }
+    .lang-toggle button {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .lang-toggle button.active {
+      background: #ffd54f;
+      color: #0d0d24;
+      border-color: #ffd54f;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    code {
+      background: rgba(255,255,255,.07);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: rgba(255,255,255,.35);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PGLEGEND — Privacy Policy</h1>
+    <div class="updated">Last updated: 13 May 2026</div>
+
+    <div class="lang-toggle">
+      <button id="btn-th" class="active" onclick="setLang('th')">ไทย</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- THAI -->
+    <div id="lang-th" class="lang-section active">
+
+      <div class="section">
+        <h2>สรุปสั้นๆ</h2>
+        <p>PGLEGEND <strong>ไม่เก็บข้อมูลส่วนตัวของคุณ</strong> ไม่มีการสมัครสมาชิก ไม่มี analytics ไม่มี tracking
+        ทุกอย่างอยู่ในเครื่องของคุณ</p>
+      </div>
+
+      <h2>1. ข้อมูลที่เก็บ</h2>
+      <p>ไม่เก็บข้อมูลใดๆ ที่ผูกกับตัวตนของคุณ</p>
+      <h3>ข้อมูลในเครื่อง (Local Only)</h3>
+      <ul>
+        <li>Progress การเล่น (level, coin, skill ที่ปลด, trophy)</li>
+        <li>Settings (เปิด/ปิดเสียง, vibration)</li>
+        <li>Daily Quest progress</li>
+        <li>Shop purchases (cosmetic frame, boost)</li>
+      </ul>
+      <p>ทั้งหมดเก็บใน <code>Documents/pglegend_save.json</code> ในเครื่องคุณเท่านั้น
+      ไม่ส่งไปที่ไหน — ลบแอพ = ข้อมูลทั้งหมดถูกลบ</p>
+
+      <h2>2. การติดต่อภายนอก</h2>
+      <p>แอพเชื่อมต่ออินเทอร์เน็ตเพียงครั้งเดียวต่อการเปิดแอพ:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> (<code>peerarpon21004-cell.github.io</code>) —
+        ดึงไฟล์ JSON config เพื่อตรวจสอบว่าแอพอยู่ในโหมดปรับปรุงหรือไม่</li>
+      </ul>
+      <p>คำขอนี้ไม่ส่งข้อมูลส่วนตัวใดๆ — เป็นแค่ HTTP GET ธรรมดา</p>
+
+      <h2>3. Cookies และ Tracking</h2>
+      <p>ไม่มี ไม่ใช้ third-party SDK ไม่ติดตามผู้ใช้ ไม่มี advertising</p>
+
+      <h2>4. การซื้อในแอพ (In-App Purchase)</h2>
+      <p>เฟส 1 launch ยังไม่มี IAP จริง coin ที่ใช้ได้ทั้งหมดมาจากการเล่นเกม
+      หากภายหลังเพิ่ม IAP จะอัปเดต Privacy Policy นี้ก่อนเปิดใช้</p>
+
+      <h2>5. เด็กและเยาวชน (COPPA)</h2>
+      <p>เกมเหมาะสำหรับอายุ 9+ เนื่องจากเกมไม่เก็บข้อมูลใดๆ จึงปฏิบัติตาม COPPA โดยอัตโนมัติ</p>
+
+      <h2>6. การเปลี่ยนแปลงนโยบาย</h2>
+      <p>หากนโยบายมีการเปลี่ยนแปลง ผู้ใช้จะเห็น banner แจ้งเตือนในแอพ
+      Last updated date จะอัปเดตด้านบนสุด</p>
+
+      <h2>7. ติดต่อ</h2>
+      <p>หากมีคำถาม ติดต่อ: <a href="mailto:peerarpon21004@icloud.com">peerarpon21004@icloud.com</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="lang-en" class="lang-section">
+      <div class="section">
+        <h2>TL;DR</h2>
+        <p>PGLEGEND <strong>does not collect any personal data</strong>. No account required, no analytics, no tracking.
+        Everything stays on your device.</p>
+      </div>
+
+      <h2>1. Data Collected</h2>
+      <p>No personally identifiable information is collected.</p>
+      <h3>On-Device Only</h3>
+      <ul>
+        <li>Game progress (level, coins, unlocked skills, trophies)</li>
+        <li>Settings (audio mute, haptics on/off)</li>
+        <li>Daily quest progress</li>
+        <li>Shop purchases (cosmetic frame, boost)</li>
+      </ul>
+      <p>All data is stored in <code>Documents/pglegend_save.json</code> on your device only.
+      Nothing is transmitted. Deleting the app removes all data.</p>
+
+      <h2>2. Network Activity</h2>
+      <p>The app makes exactly one outbound HTTPS request per cold launch:</p>
+      <ul>
+        <li><strong>GitHub Pages</strong> (<code>peerarpon21004-cell.github.io</code>) —
+        fetches a JSON configuration file to determine maintenance state.</li>
+      </ul>
+      <p>This request does not transmit any personal information — it is a plain HTTP GET.</p>
+
+      <h2>3. Cookies and Tracking</h2>
+      <p>None. No third-party SDKs. No user tracking. No advertising.</p>
+
+      <h2>4. In-App Purchases</h2>
+      <p>Phase 1 launch contains no real-money IAP. All in-game currency is earned by playing.
+      Any future IAP additions will trigger an update to this policy.</p>
+
+      <h2>5. Children's Privacy (COPPA)</h2>
+      <p>The game is appropriate for ages 9+. Because no data is collected,
+      the app complies with COPPA by design.</p>
+
+      <h2>6. Changes to this Policy</h2>
+      <p>If this policy changes, the app will display an in-app banner notifying users.
+      The "Last updated" date above will reflect any revision.</p>
+
+      <h2>7. Contact</h2>
+      <p>Questions: <a href="mailto:peerarpon21004@icloud.com">peerarpon21004@icloud.com</a></p>
+    </div>
+
+    <div class="footer">
+      PGLEGEND © 2026 · Solo-developed iOS Match-3 RPG
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('lang-th').classList.toggle('active', lang === 'th');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-th').classList.toggle('active', lang === 'th');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    // Default to device language
+    if (navigator.language && navigator.language.startsWith('en')) setLang('en');
+  </script>
+</body>
+</html>
